@@ -262,7 +262,7 @@ create procedure sp_getPeliculas
   as select id,Titulo,Link,Sinopsis from Pelicula where idEstado = @idEstado
 go
 
-create procedure sp_getPelicula
+create procedure sp_getPelicula 
   @id int
   as
   select *, dbo.getGenerosDetalle(Generos) 'Geneross' from Pelicula where id = @id

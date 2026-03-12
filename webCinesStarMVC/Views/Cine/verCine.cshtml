@@ -37,6 +37,7 @@
 				<div class="celda-cabecera">Películas</div>
 				<div class="celda-cabecera">Horarios</div>
 			</div>
+			@{ bolFila = false; }
 			@foreach(var oCinePelicula in lstCinePelicula)
 			{
 				css = bolFila ? "fila" : "fila impar";
